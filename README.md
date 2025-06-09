@@ -1,3 +1,3 @@
 # dotfiles
 System configuration
-`chmod +x`
+`sudo chmod +x`
