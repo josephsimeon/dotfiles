@@ -5,4 +5,5 @@
 
 --	colorscheme colourname
 vim.cmd([[
+    colorscheme xcodedark
 ]])

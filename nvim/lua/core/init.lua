@@ -6,5 +6,6 @@
 require ("core.settings")
 require ("core.keybinds")
 require ("core.snippets")
+require ("core.colours")
 
 print ("Loaded all core files")
