@@ -20,6 +20,7 @@
       environment.systemPackages = [ 
 	  pkgs.neovim
 	  pkgs.git
+      # rustup install stable && rustup default stable && rustup update
       pkgs.rustup
       pkgs.cargo
         ];
