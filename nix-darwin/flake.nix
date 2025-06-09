@@ -1,3 +1,5 @@
+# cd ~/.config/nix-darwin && sudo nix flake init -t nix-darwin --extra-experimental-feature "nix-command flakes"
+# sudo nix run nix-darwin --extra-experimental-features "nix-command flakes"  --switch --flake ~/.config/nix-darwin#mini
 # sudo darwin-rebuild switch --flake ~/.config/nix-darwin#mini
 {
   description = "joseph's nix-darwin system flake";
