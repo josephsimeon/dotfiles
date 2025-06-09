@@ -20,6 +20,8 @@
       environment.systemPackages = [ 
 	  pkgs.neovim
 	  pkgs.git
+      pkgs.rustup
+      pkgs.cargo
         ];
 
       fonts.packages = [
