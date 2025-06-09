@@ -1,3 +1,4 @@
+# sudo darwin-rebuild switch --flake ~/.config/nix-darwin#mini
 {
   description = "joseph's nix-darwin system flake";
 
