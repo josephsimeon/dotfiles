@@ -20,9 +20,13 @@
       environment.systemPackages = [ 
 	  pkgs.neovim
 	  pkgs.git
-      # rustup install stable && rustup default stable && rustup update
-      pkgs.rustup
+      pkgs.rustup # rustup install stable && rustup default stable && rustup update
       pkgs.cargo
+      pkgs.gcc
+      pkgs.cmake
+      pkgs.python3
+      pkgs.ninja
+      pkgs.dfu-util
         ];
 
       fonts.packages = [
