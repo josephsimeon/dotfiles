@@ -31,16 +31,16 @@
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
       environment.systemPackages = [ 
-	  pkgs.neovim
-	  pkgs.git
-      pkgs.rustup # rustup install stable && rustup default stable && rustup update
-      pkgs.cargo
-      pkgs.gcc
-      pkgs.cmake
-      pkgs.python3
-      pkgs.ninja
-      pkgs.dfu-util
-        ];
+        pkgs.neovim
+        pkgs.git
+        pkgs.rustup # `rustup install stable && rustup default stable && rustup update`
+        pkgs.cargo
+        pkgs.gcc
+        pkgs.cmake
+        pkgs.python3
+        pkgs.ninja
+        pkgs.dfu-util
+      ];
 
       fonts.packages = [
       ];
