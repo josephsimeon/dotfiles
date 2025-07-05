@@ -22,9 +22,6 @@
     pkgs.git
     pkgs.rustup # `rustup install stable && rustup default stable && rustup update`
     pkgs.cargo
-    pkgs.gcc
-    pkgs.cmake
-    pkgs.python3
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
