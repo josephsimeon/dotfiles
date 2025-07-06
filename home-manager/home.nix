@@ -21,6 +21,7 @@
     pkgs.neovim
     pkgs.git
     pkgs.rustup # `rustup install stable && rustup default stable && rustup update`
+    # pkgs.cargo will be installed with rustup
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the

@@ -34,7 +34,7 @@
         pkgs.neovim
         pkgs.git
         pkgs.rustup # `rustup install stable && rustup default stable && rustup update`
-        pkgs.cargo
+        # pkgs.cargo will be installed with rustup
         pkgs.gcc
         pkgs.cmake
         pkgs.python3
