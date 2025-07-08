@@ -23,6 +23,7 @@
     pkgs.rustup         # `rustup install stable && rustup default stable && rustup update`
     # pkgs.cargo will be installed with rustup
     pkgs.gcc            # needed for c-based toolchains 
+    pkgs.make           # needed for makefile projects
     pkgs.cmake          # needed for cmake projects
     pkgs.python3        # added this based on the reccomended toolchain set-up for esp32 
     pkgs.ninja          # added this based on the reccomended toolcahin set-up for esp32
