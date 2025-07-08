@@ -20,8 +20,18 @@
   home.packages = [
     pkgs.neovim
     pkgs.git
-    pkgs.rustup # `rustup install stable && rustup default stable && rustup update`
+    pkgs.rustup         # `rustup install stable && rustup default stable && rustup update`
     # pkgs.cargo will be installed with rustup
+    pkgs.gcc            # needed for c-based toolchains 
+    pkgs.cmake          # needed for cmake projects
+    pkgs.python3        # added this based on the reccomended toolchain set-up for esp32 
+    pkgs.ninja          # added this based on the reccomended toolcahin set-up for esp32
+    pkgs.dfu-util       # added this based on the reccomended toolchain set-up for esp32
+    pkgs.flex           # added this based on the reccomended toolchain set-up for esp32
+    pkgs.bison          # added this based on the reccomended toolchain set-up for esp32
+    pkgs.gperf          # added this based on the reccomended toolchain set-up for esp32
+    pkgs.ccache         # added this based on the reccomended toolchain set-up for esp32
+    # sudo apt-get install libffi-dev libssl-dev dfu-util libusb-1.0-0
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
