@@ -6,7 +6,6 @@ brews=(
     neovim
     git
     gcc
-    arm-none-eabi-gcc
     make
     cmake
     python3
@@ -14,9 +13,10 @@ brews=(
     dfu-util
 )
 
-# casks=(
-# )
+casks=(
+    gcc-arm-embedded
+)
 
 brew install "${brews[@]}"
 
-# brew install --cask "${casks[@]}"
+brew install --cask "${casks[@]}"
