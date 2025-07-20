@@ -67,13 +67,21 @@ let netrw_liststyle=3
 let netrw_browse_split=4
 let netrw_winsize=80
 
+" Yank line
 nnoremap    Y               y$
+
+" Clipboard yanking and pasting
 noremap     <leader>y       "+y
 nnoremap    <leader>Y       "+Y
 noremap     <leader>P       "+P
+
+" Delete to void
 noremap     <leader>d       "_d
 
+" Move lines down and up
 vnoremap    J               :m '>+1<CR>gv=gv
 vnoremap    K               :m '<-2<CR>gv=gv
+
+" Append the next line to this position
 nnoremap    J               mzJ`z
 
