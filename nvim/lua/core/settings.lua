@@ -7,8 +7,8 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
--- keybindings placed in core.settings for quicker saving and sourcing
--- when bulding this file.
+-- keybindings placed in core.settings for quicker saving and sourcing when building this file,
+-- most likey won't be moved in the future.
 
 -- quick action source
 vim.keymap.set("n", "<leader><leader>", function()
@@ -56,6 +56,7 @@ vim.opt.relativenumber = true
 vim.opt.guicursor = ""
 
 -- tabbing and shifting
+vim.opt.textwidth = 99
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
