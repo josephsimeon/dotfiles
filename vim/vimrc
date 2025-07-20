@@ -1,6 +1,8 @@
+" .vimrc
+" @author    Joseph Simeon
 
-set nocompatible        " Don't try to be compatible with vi
-filetype off            " Force plugins to load correctly
+set nocompatible        		    " Don't try to be compatible with vi
+filetype off            		    " Force plugins to load correctly
 
 " TODO: Load plugins
 
@@ -8,15 +10,70 @@ syntax on
 filetype plugin indent on
 set modelines=0
 
+if has('mouse')
+    set mouse=a
+endif
+
 let mapleader=" "
 let maplocalleader=" "
 
-" quick actions for save and source
+" Quick actions for save and source
 nnoremap 	<leader><leader> 	:so<CR>
-noremap 	<leader>W 		:w!<CR>
+noremap 	<leader>W 		    :w!<CR>
 
-" set number gutter with relativity
+" Set number gutter with relativity
 set number
 set relativenumber
 
-set ignorecase smartcase incsearch
+set ignorecase smartcase incsearch  " Search better visually
+set wildmenu                        " Visual prompt for command completion
+
+set visualbell				        " Blink cursor instead of beeping
+
+set backspace=eol,start,indent
+
+" Setting up text limits
+set encoding=utf-8
+set textwidth=99
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+
+set scrolloff=8
+set signcolumn=yes
+set isfname+=@-@
+
+" Cursor settings
+set guicursor=""
+set cursorline
+set colorcolumn=100
+
+" Turn off backup due to mostly using git
+set undodir=~/.vim/undodir
+set undofile
+
+set splitbelow splitright           " Split correctly with `:split` and `:vsplit`
+
+set laststatus=2
+
+set updatetime=50
+
+" netrw settings
+nnoremap    <leader>pv      :Ex<CR>
+nnoremap    <leader>pb      <C-6>
+let netrw_banner=0
+let netrw_liststyle=3
+let netrw_browse_split=4
+let netrw_winsize=80
+
+nnoremap    Y               y$
+noremap     <leader>y       "+y
+nnoremap    <leader>Y       "+Y
+noremap     <leader>P       "+P
+noremap     <leader>d       "_d
+
+vnoremap    J               :m '>+1<CR>gv=gv
+vnoremap    K               :m '<-2<CR>gv=gv
+nnoremap    J               mzJ`z
+
