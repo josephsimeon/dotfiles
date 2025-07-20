@@ -1,0 +1,22 @@
+
+set nocompatible        " Don't try to be compatible with vi
+filetype off            " Force plugins to load correctly
+
+" TODO: Load plugins
+
+syntax on
+filetype plugin indent on
+set modelines=0
+
+let mapleader=" "
+let maplocalleader=" "
+
+" quick actions for save and source
+nnoremap 	<leader><leader> 	:so<CR>
+noremap 	<leader>W 		:w!<CR>
+
+" set number gutter with relativity
+set number
+set relativenumber
+
+set ignorecase smartcase incsearch
