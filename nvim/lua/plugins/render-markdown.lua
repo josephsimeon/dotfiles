@@ -10,5 +10,10 @@ return {
     -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' }, -- if you prefer nvim-web-devicons
     ---@module 'render-markdown'
     ---@type render.md.UserConfig
-    opts = {},
+    opts = {
+        enabled = false,
+    },
+
+    -- Adding in the command that will toggle between markdown render
+    vim.keymap.set("n", "<leader>md", "<cmd>RenderMarkdown toggle<CR>", { silent = true })
 }
