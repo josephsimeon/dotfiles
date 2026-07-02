@@ -11,6 +11,7 @@ brews=(
     python3
     ninja
     dfu-util
+    yt-dlp
 )
 
 casks=(
